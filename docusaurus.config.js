@@ -140,7 +140,7 @@ const config = {
             items: [
               {
                 label: 'starrain',
-                to: '/sr',
+                to: '/sr/intro',
               },
             ],
           },
