@@ -14,9 +14,6 @@ const config = {
   tagline: '마참내!',
   favicon: 'img/favicon.ico',
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -142,8 +139,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'starrain',
+                to: '/sr',
               },
             ],
           },
@@ -167,10 +164,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
