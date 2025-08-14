@@ -85,6 +85,7 @@ const config = {
         path: 'sr',
         routeBasePath: 'sr',
         sidebarPath: require.resolve('./sidebars.sr.js'),
+        editUrl: 'https://github.com/union-1002/wiki/edit/main/sr/'
       },
     ],
     [
@@ -94,6 +95,7 @@ const config = {
         path: 'hl',
         routeBasePath: 'hl',
         sidebarPath: require.resolve('./sidebars.hl.js'),
+        editUrl: 'https://github.com/union-1002/wiki/edit/main/hl/'
       },
     ],
   ],
