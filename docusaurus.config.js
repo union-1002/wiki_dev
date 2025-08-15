@@ -26,7 +26,7 @@ const config = {
   url: 'https://union-1002.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/wiki/',
+  baseUrl: '/wiki_dev/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -88,7 +88,7 @@ const config = {
         path: 'sr',
         routeBasePath: 'sr',
         sidebarPath: require.resolve('./sidebars.sr.js'),
-        editUrl: 'https://github.com/union-1002/wiki/edit/main/',
+        editUrl: 'https://github.com/union-1002/wiki_dev/edit/main/',
         remarkPlugins: [remarkGfm],
       },
     ],
@@ -99,7 +99,7 @@ const config = {
         path: 'union',
         routeBasePath: 'union',
         sidebarPath: require.resolve('./sidebars.union.js'),
-        editUrl: 'https://github.com/union-1002/wiki/edit/main/',
+        editUrl: 'https://github.com/union-1002/wiki_dev/edit/main/',
         remarkPlugins: [remarkGfm],
       },
     ],
