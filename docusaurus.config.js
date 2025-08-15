@@ -5,6 +5,9 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkGfm from 'remark-gfm';
+
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -85,17 +88,19 @@ const config = {
         path: 'sr',
         routeBasePath: 'sr',
         sidebarPath: require.resolve('./sidebars.sr.js'),
-        editUrl: 'https://github.com/union-1002/wiki/edit/main/'
+        editUrl: 'https://github.com/union-1002/wiki/edit/main/',
+        remarkPlugins: [remarkGfm],
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'hl',
-        path: 'hl',
-        routeBasePath: 'hl',
-        sidebarPath: require.resolve('./sidebars.hl.js'),
-        editUrl: 'https://github.com/union-1002/wiki/edit/main/'
+        id: 'union',
+        path: 'union',
+        routeBasePath: 'union',
+        sidebarPath: require.resolve('./sidebars.union.js'),
+        editUrl: 'https://github.com/union-1002/wiki/edit/main/',
+        remarkPlugins: [remarkGfm],
       },
     ],
   ],
@@ -121,10 +126,10 @@ const config = {
           },
           {
             type: 'docSidebar',
-            docsPluginId: 'hl',
-            sidebarId: 'hlSidebar',
+            docsPluginId: 'union',
+            sidebarId: 'unionSidebar',
             position: 'left',
-            label: '헤이룽화',
+            label: '유니온',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
