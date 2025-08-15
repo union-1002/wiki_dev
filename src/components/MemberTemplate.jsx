@@ -1,3 +1,5 @@
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 export default function MemberTemplate({
   title,            // 팀명
   image,            // 이미지 경로
@@ -12,6 +14,9 @@ export default function MemberTemplate({
   labelBg = '#f9f9f9', // 정보행 첫 열 배경색
   labelColor = '#000', // 정보행 첫 열 글자색
 }) {
+
+  const resolvedSrc = typeof image === 'string' ? useBaseUrl(image) : image; 
+
   return (
     <table
       className="member-table"
@@ -46,13 +51,11 @@ export default function MemberTemplate({
         <tr>
           <td colSpan={2} style={{ textAlign: 'center', padding: '0.5rem' }}>
             <img
-              src={image}
+              src={resolvedSrc}
               alt={title}
               style={{
                 maxWidth: '100%',
                 height: 'auto',
-                borderRadius: '6px',
-                border: `2px solid ${headerBg}`
               }}
             />
           </td>
