@@ -9,10 +9,8 @@ export default function MemberTemplate({
   height,
   affiliation,
   ability,
-  headerBg = '#333',   // 첫 번째 행 배경색
-  headerColor = '#fff',// 첫 번째 행 글자색
-  labelBg = '#f9f9f9', // 정보행 첫 열 배경색
-  labelColor = '#000', // 정보행 첫 열 글자색
+  bg = '#333',   // 첫 번째 행 배경색
+  cr = '#fff'// 첫 번째 행 글자색
 }) {
 
   const resolvedSrc = typeof image === 'string' ? useBaseUrl(image) : image; 
@@ -26,18 +24,18 @@ export default function MemberTemplate({
         width: '100%',
         maxWidth: '400px',
         margin: '1rem 0',
-        border: `1px solid ${headerBg}`,
+        border: `1px solid ${bg}`,
         textAlign: 'center'
       }}
     >
       <tbody>
         {/* 1행: 제목 */}
-        <tr>
+        <tr style={{ border: 'none' }}>
           <th
             colSpan={2}
             style={{
-              background: headerBg,
-              color: headerColor,
+              background: bg,
+              color: cr,
               padding: '0.5rem',
               fontSize: '1.2rem',
               textAlign: 'center',
@@ -48,7 +46,7 @@ export default function MemberTemplate({
         </tr>
 
         {/* 2행: 이미지 */}
-        <tr>
+        <tr style={{ border: 'none' }}>
           <td colSpan={2} style={{ textAlign: 'center', padding: '0.5rem' }}>
             <img
               src={resolvedSrc}
@@ -75,8 +73,8 @@ export default function MemberTemplate({
               style={{
                 width: '30%',
                 padding: '0.4rem',
-                background: labelBg,
-                color: labelColor
+                background: bg,
+                color: cr
               }}
             >
               {label}
