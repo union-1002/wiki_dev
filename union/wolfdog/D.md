@@ -80,11 +80,11 @@ import MemberTemplate from '@site/src/components/MemberTemplate.jsx';
 
 <details>
   <summary>
-    너의 이름은 현도재玄韜渽다. 알겠느냐?
-    그 미치광이는 도재라는 이름을 거두며 땟국물 죽죽 흘리는 아이를 답삭 쥐어 슬럼의 거처로 데려갔다.
-    삡삐약.
+    더보기
   </summary>
 
-  테스트
+  너의 이름은 현도재玄韜渽다. 알겠느냐?
+  그 미치광이는 도재라는 이름을 거두며 땟국물 죽죽 흘리는 아이를 답삭 쥐어 슬럼의 거처로 데려갔다.
+  삡삐약.
 
 </details>
