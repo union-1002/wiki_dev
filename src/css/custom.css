@@ -43,3 +43,47 @@
 .member-table td {
   border: none;
 }
+
+.footnotes {
+  border-top: 1px solid #ccc; /* 회색 실선 */
+  margin-top: 4rem;           /* 본문과 간격 */
+  padding-top: 1rem;
+  font-size: small;
+}
+
+/* "Footnotes" 숨김 */
+.footnotes > h2 {
+  display: none;
+}
+
+/* 본문 위 첨자 → [1] */
+sup a::before {
+  content: "[";
+}
+sup a::after {
+  content: "]";
+}
+
+/* 아래 footnotes 리스트 번호도 [1]처럼 보이게 */
+.footnotes ol {
+  list-style: none;      /* 숫자 지우기 */
+  padding-left: 0;
+  counter-reset: list;   /* 카운터 초기화 */
+}
+
+.footnotes ol li {
+  counter-increment: list;
+  display: flex;         /* [번호] + 내용 한 줄 정렬 */
+  align-items: flex-start;
+}
+
+.footnotes ol li::before {
+  content: "[" counter(list) "] ";
+  margin-right: 0.25em;  /* 번호와 내용 간격 */
+  flex-shrink: 0;
+}
+
+.footnotes ol li p {
+  display: inline;  /* 엔터 없이 번호랑 붙임 */
+  margin: 0;
+}
