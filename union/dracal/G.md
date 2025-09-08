@@ -4,18 +4,18 @@ sidebar_position: 4
 
 import MemberTemplate from '@site/src/components/MemberTemplate.jsx';
 
-# J
+# G
 
 <MemberTemplate
   title="드라칼"
-  image="/img/G.png"
+  image="/img/d.png"
   codename="G"
   gender="남성"
   age="27"
   height="183cm"
   affiliation=""
   ability="[S급] "
-  bg="#ebeffa"
+  bg="#2f61d4"
   cr="#fff"
 />
 

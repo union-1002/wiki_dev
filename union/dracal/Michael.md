@@ -4,18 +4,18 @@ sidebar_position: 3
 
 import MemberTemplate from '@site/src/components/MemberTemplate.jsx';
 
-# J
+# 미카엘
 
 <MemberTemplate
   title="드라칼"
-  image="/img/미카엘.png"
+  image="/img/d.png"
   codename="미카엘"
   gender="남성"
   age="21"
   height="165cm"
   affiliation=""
   ability="[S급] "
-  bg="#ebeffa"
+  bg="#2f61d4"
   cr="#fff"
 />
 

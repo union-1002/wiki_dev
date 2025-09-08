@@ -8,14 +8,14 @@ import MemberTemplate from '@site/src/components/MemberTemplate.jsx';
 
 <MemberTemplate
   title="드라칼"
-  image="/img/j.png"
+  image="/img/d.png"
   codename="J"
   gender="남성"
   age="26"
   height="182cm"
   affiliation="리더"
   ability="[S급] "
-  bg="#ebeffa"
+  bg="#2f61d4"
   cr="#fff"
 />
 
